@@ -1,0 +1,25 @@
+<div class="title">
+    <h3>List of Games</h3>
+    <button type="button" class="btn btn-primary">Add</button>
+</div>
+<table class="table table-secondary">
+    <thead>
+      <tr>
+        <th scope="col">Number</th>
+        <th scope="col">Name</th>
+        <th scope="col">Studio</th>
+        <th scope="col">Release Year</th>
+        <th scope="col"></th>
+      </tr>
+      
+    </thead>
+    <tbody>
+        <tr *ngFor="let games of listGames" class="table-light">
+            <td>{{games.game_id}}</td>
+            <td>{{games.name}}</td>
+            <td>{{games.studio}}</td>
+            <td>{{games.release_year}}</td>
+            <td></td>
+          </tr>
+    </tbody>
+</table>
